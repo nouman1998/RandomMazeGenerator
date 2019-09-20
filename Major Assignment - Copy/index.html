@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="background-color: #e3e3e3">
+    
+    <h1 style="text-align: center">Major Assignment 1</h1>
+    <canvas id="mycanvas" height="500" width="500" ></canvas>
+    <br><br>
+    <div><h1>Levels</h1></div>
+    <div id="center" style="text-align: center;"><button id="easy" onclick="easy()" >Easy</button>
+    <button  onclick="medium()">Medium</button>
+    <button onclick="hard()">Hard</button>
+    <button onclick="reload()" >Reload</button>
+    <button onclick="custom()">Custom</button></div>
+ <div><input id="rows" type="hidden"  placeholder="Enter Size of canvas in pixels">
+    <input id="size" type="hidden"  placeholder="Size of Square ">
+    <button id="submit" onclick="enter()" >Submit</button>
+
+</div>
+    <div>
+    <h1>Options</h1>
+    <button onclick="auto()" id="mybtn" disabled=true;>Auto </button> <!--myFunction()-->
+    <button  id="mybtn1" disabled=true;>Manual </button>
+    <button onclick="myFunction1()" id="mybtn2" disabled=true;>Stop</button><!--myFunction1()--></div>
+<br><br>
+
+</body>
+<style>
+    button{
+        height: 50px;
+        width: 100px;
+        background-color: greenyellow;
+        border: 1px solid;
+    }
+    div{
+        text-align: center;
+    }
+    input{
+        height: 40px;
+        width: 180px;   
+    }
+    #submit{
+    display:none;
+    margin-top: 10px;
+    margin-left: 15px;
+    }
+
+</style>
+<script src="js.js"></script>
+</html>
